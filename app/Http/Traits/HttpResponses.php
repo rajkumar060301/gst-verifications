@@ -16,7 +16,7 @@ trait HttpResponses
     protected function success($data, string $message = null, int $code = ResponseAlias::HTTP_OK): JsonResponse
     {
         return response()->json([
-            'status' => '',
+            'status' => 'API Token Generated',
             'message' => $message,
             'data' => $data,
         ], $code);
